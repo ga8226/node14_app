@@ -11,7 +11,7 @@ app.use('/', interview);
 app.use('/b', banner);
 app.use('/navi', navi);
 app.use((req,res)=>{
-    res.status(404).sendFile(__dirname+'/public/nopage.html')
+    res.status(404).sendFile(__dirname+'/frount/public/nopage.html')
 })
 app.listen(8000,()=>{
     console.log("서버 정상 구동중이니?")
